@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="id" pageWidth="420" pageHeight="550" columnWidth="380" leftMargin="20" rightMargin="20"
+              topMargin="20" bottomMargin="20" uuid="05d821bb-7fca-4339-b3cc-a6a430459b8f">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+    <property name="com.jaspersoft.studio.report.description" value=""/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <parameter name="epass_id" class="java.lang.Long"/>
+    <queryString language="SQL">
+        <![CDATA[SELECT * FROM epasscovid19.tbl_epass_applications WHERE epass_application_id=$P{epass_id}]]>
+    </queryString>
+    <field name="epass_application_id" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.label" value="epass_application_id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="application_status" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.label" value="application_status"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="created_on" class="java.sql.Timestamp">
+        <property name="com.jaspersoft.studio.field.label" value="created_on"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="fullname" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="fullname"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="gender" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="gender"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="is_deleted" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.label" value="is_deleted"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+
+    <field name="user_id" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.label" value="user_id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="destinationaddress" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="destinationaddress"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="email" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="email"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="idproofnumber" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="idproofnumber"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="idproofselect" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="idproofselect"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="phonenumber" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="phonenumber"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="sourceaddress" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="sourceaddress"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="image" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.label" value="image"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="epass_application_no" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="epass_application_no"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="destination_district" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="destination_district"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="idproofimage" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.label" value="idproofimage"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="present_district" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.label" value="present_district"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="end_date" class="java.sql.Date">
+        <property name="com.jaspersoft.studio.field.label" value="end_date"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <field name="start_date" class="java.sql.Date">
+        <property name="com.jaspersoft.studio.field.label" value="start_date"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tbl_epass_applications"/>
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <pageHeader>
+        <band height="85" splitType="Stretch">
+            <textField isBlankWhenNull="true">
+                <reportElement x="0" y="40" width="380" height="40" uuid="5d1b5e67-0f88-4e48-a354-81db426b8464"/>
+                <box>
+                    <topPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Government of Telangana"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="0" y="0" width="380" height="40" uuid="5be10df4-9b6b-40ff-9167-079726bf09a3"/>
+                <box>
+                    <topPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["e-Pass"]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <detail>
+        <band height="425" splitType="Stretch">
+            <frame>
+                <reportElement x="0" y="130" width="380" height="250" uuid="e540cb97-fddb-4472-8650-52a4a929a9cd"/>
+                <staticText>
+                    <reportElement x="1" y="0" width="149" height="40" uuid="ef76dfb3-0047-4f15-99d3-8611c3c6f00e"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[e-Pass No.]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="150" y="0" width="20" height="40" uuid="bc1d6454-2ab7-4235-bbad-b728b55d5b64"/>
+                    <box leftPadding="0"/>
+                    <textElement textAlignment="Center" verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[:]]></text>
+                </staticText>
+                <textField isBlankWhenNull="true">
+                    <reportElement x="170" y="0" width="210" height="40" uuid="4a24ac7a-10f0-425d-a254-75b254973186"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="12"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{epass_application_no}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="40" width="150" height="40" uuid="44989ded-67c9-4ca1-b622-2f1fe8d5f80f"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Name]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="150" y="40" width="20" height="40" uuid="efc8ae9f-2a37-411a-8c46-36a20612b34a"/>
+                    <box leftPadding="0"/>
+                    <textElement textAlignment="Center" verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[:]]></text>
+                </staticText>
+                <textField isBlankWhenNull="true">
+                    <reportElement x="170" y="40" width="209" height="40" uuid="7af77dfb-12d2-49a3-a250-f0d272ba7ce8"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="12"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{fullname}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="80" width="150" height="40" uuid="9dc8cde0-da95-4943-9fce-348a4dd232e2"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Source]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="150" y="80" width="20" height="40" uuid="5255e734-828f-4155-8e78-40e4ed0d2348"/>
+                    <box leftPadding="0"/>
+                    <textElement textAlignment="Center" verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[:]]></text>
+                </staticText>
+                <textField isBlankWhenNull="true">
+                    <reportElement x="170" y="80" width="210" height="40" uuid="92b84558-4764-48b3-94ce-d86e4003d51f"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="12"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{sourceaddress}+" "+$F{present_district}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="120" width="150" height="40" uuid="c32ea26a-3915-4635-aa35-75f1e92ee317"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Destination]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="150" y="120" width="20" height="40" uuid="c64a1eb3-0919-4483-82e7-508735ef7d46"/>
+                    <box leftPadding="0"/>
+                    <textElement textAlignment="Center" verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[:]]></text>
+                </staticText>
+                <textField isBlankWhenNull="true">
+                    <reportElement x="170" y="120" width="210" height="40" uuid="de458b1f-4e93-4bfe-a2f1-28d0c8d4dae8"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="12"/>
+                    </textElement>
+                    <textFieldExpression>
+                        <![CDATA[$F{destinationaddress}+" "+$F{destination_district}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="160" width="150" height="40" uuid="2d9e003c-a8c3-405b-adca-5617c7891507"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Valid From]]></text>
+                </staticText>
+                <textField isBlankWhenNull="true">
+                    <reportElement x="170" y="160" width="210" height="40" uuid="94dfc05b-6e51-428c-ac21-1a19eabd1cf9"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="12"/>
+                    </textElement>
+                    <textFieldExpression>
+                        <![CDATA[new SimpleDateFormat("dd/MM/yyyy").format($F{start_date})]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="150" y="160" width="20" height="40" uuid="db9de3b3-d103-4e96-a2f7-433640486af7"/>
+                    <box leftPadding="0"/>
+                    <textElement textAlignment="Center" verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="200" width="150" height="40" uuid="8a89e532-8632-41db-adbd-deeb1ac279fb"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Valid To]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="150" y="200" width="20" height="40" uuid="2e60d42f-7f52-44d0-8385-eea0ae3b793f"/>
+                    <box leftPadding="0"/>
+                    <textElement textAlignment="Center" verticalAlignment="Middle">
+                        <font size="14" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[:]]></text>
+                </staticText>
+                <textField isBlankWhenNull="true">
+                    <reportElement x="170" y="200" width="210" height="40" uuid="07fee409-06f7-4f76-a6b6-9ca1d0c321bc"/>
+                    <box leftPadding="2"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="12"/>
+                    </textElement>
+                    <textFieldExpression>
+                        <![CDATA[new SimpleDateFormat("dd/MM/yyyy").format($F{end_date})]]></textFieldExpression>
+                </textField>
+            </frame>
+            <image>
+                <reportElement x="120" y="10" width="120" height="110" uuid="604ee0ba-4df5-446a-9be7-28e89165df03"/>
+                <imageExpression><![CDATA[$F{image}]]></imageExpression>
+            </image>
+            <image>
+                <reportElement x="260" y="370" width="50" height="50" uuid="eb28aced-3ddf-48df-a170-389a8f5b549e"/>
+                <imageExpression>
+                    <![CDATA["http://3.bp.blogspot.com/-wDCmLqXsTFM/U5GjxN1de8I/AAAAAAAAAAg/bVHAe3LEAJY/s1600/telangana.jpg"]]></imageExpression>
+            </image>
+        </band>
+    </detail>
+</jasperReport>
